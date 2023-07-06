@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Interactive pricing component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="Welcome-section">
+        <img
+          src="images/pattern-circles.svg"
+          alt="pattern-circles image for decoration"
+        />
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+      <div class="pricing-plans-container">
+        <div class="plan">
+          <p class="plan-name">100k Pageviews</p>
+          <p class="plan-price"><span>$16.00</span> /month</p>
+          <input
+            type="range"
+            class="range"
+            step="1"
+            min="1"
+            max="5"
+            value="3"
+          />
+        </div>
+        <div class="plan-type">
+          <p>Monthly Billing</p>
+          <button class="select-btn"></button>
+          <p class="yearly">Yearly Billing <span>-25%</span></p>
+        </div>
+        <hr />
+        <div class="plan-features">
+          <ul>
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <button class="start-btn">Start my trial</button>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
